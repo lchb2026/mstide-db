@@ -515,8 +515,5 @@ information.
 
 ## License
 
-No open-source license is currently included.
-
-Unless a license is added by the project owners, the source code should
-be treated as private/proprietary and should not be redistributed or
-reused without permission.
+The msTide 2.0 source code is licensed under the MIT License.
+See the LICENSE file for details.
