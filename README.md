@@ -517,3 +517,7 @@ information.
 
 The msTide 2.0 source code is licensed under the MIT License.
 See the LICENSE file for details.
+
+The experimental MS/MS data and associated metadata are licensed
+under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+license.
