@@ -1,0 +1,36 @@
+security:
+    password_hashers:
+        App\Entity\User:
+            algorithm: auto
+
+    providers:
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: login
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            lazy: true
+            provider: app_user_provider
+            json_login:
+                check_path: /api/user/login
+                username_path: login
+                password_path: password
+            logout:
+                path: /api/user/logout
+                invalidate_session: true
+            stateless: false
+
+    access_control:
+        - { path: ^/api/user/login, roles: PUBLIC_ACCESS }
+        - { path: ^/api/user/logout, roles: PUBLIC_ACCESS }
+        - { path: ^/api/user/me, roles: PUBLIC_ACCESS }
+        - { path: ^/save, roles: ROLE_USER }
+        - { path: ^/delete, roles: ROLE_USER }
+        - { path: ^/upload-file, roles: ROLE_USER }
+        - { path: ^/upload-picture, roles: ROLE_USER }
