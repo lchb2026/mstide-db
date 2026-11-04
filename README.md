@@ -1,6 +1,6 @@
-# MSTIDE Database 2.0
+# msTide 2.0
 
-**MSTIDE Database 2.0** is a web-based database for negative-ion tandem
+**msTide 2.0** is a web-based database for negative-ion tandem
 mass spectrometry (MS/MS) data of natural nucleotides and their
 synthetic derivatives.
 
@@ -69,7 +69,7 @@ The application can be deployed using:
 ## Repository Structure
 
 ``` text
-mstide-db2/
+-db2/
 │
 ├── frontend/
 │   ├── public/
@@ -473,7 +473,7 @@ There is currently no automated test suite configured for the project.
 
 ## Scientific Context
 
-MSTIDE Database 2.0 supports the analysis of fragmentation patterns in
+msTide 2.0 supports the analysis of fragmentation patterns in
 biologically and therapeutically relevant natural nucleotides and
 synthetic nucleotide derivatives.
 
