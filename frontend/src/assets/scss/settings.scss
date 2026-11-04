@@ -1,0 +1,8 @@
+@use 'vuetify/settings' with (
+  $body-font-family: ('Mulish', sans-serif),
+  $typography: (
+    'caption': (
+      'font-family': inherit,
+    ),
+  ),
+);
