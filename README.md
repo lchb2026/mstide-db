@@ -31,6 +31,7 @@ mstide-db2/
 -   Compare spectra of two or more compounds and calculate their Match
     Factor.
 -   Download compound structures in SDF format when available.
+-   Public database statistics (compounds, fragments, and assigned compound–fragment peaks).
 -   Session-based user authentication.
 -   Authenticated management of compounds and fragments.
 -   Upload compound images, fragment images, and SDF structure files.
@@ -275,6 +276,11 @@ Main authentication endpoints:
   `POST`   `/api/user/login`    Log in
   `POST`   `/api/user/logout`   Log out
   `GET`    `/api/user/me`       Get current authentication state
+
+**Public statistics**
+`GET /api/statistics` returns JSON counts for compounds, fragments, and
+assignedPeaks. The latter counts compound–fragment assignments, not all
+spectrum peak-list entries. The frontend displays these counts on its home page.
 
 ### Compounds
 
