@@ -304,10 +304,11 @@ Main compound endpoints include:
   `PUT` / `PATCH`         `/api/compound/{id}/save`          Update a compound
 
   `DELETE`                `/api/compound/{id}`               Delete a compound
-
+  
   `POST`                  `/api/compound/{id}/upload-file`   Upload a compound image
                                                              or SDF file
-  ----------------------------------------------------------------------------------
+
+   ----------------------------------------------------------------------------------
 
 ### Fragments
 
@@ -327,9 +328,10 @@ Main fragment endpoints include:
   `PUT` / `PATCH`         `/api/fragment/{id}/save`             Update a fragment
 
   `DELETE`                `/api/fragment/{id}`                  Delete a fragment
-
+  
   `POST`                  `/api/fragment/{id}/upload-picture`   Upload a fragment image
-  -------------------------------------------------------------------------------------
+
+   -------------------------------------------------------------------------------------
 
 Compound and fragment searches intentionally use the custom HTTP method
 `QUERY`. Development and production reverse proxies must allow and
